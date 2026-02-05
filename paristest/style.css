@@ -1,0 +1,72 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b c"
+    "d q e"
+    "f g h";
+    height: 100vh;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+section#a {
+    grid-area: a;
+    background: url(images/a.jpg) center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+
+section#b {
+    grid-area: b;
+    background: url(images/b.webp) center;
+    background-size: cover;
+}
+
+section#c {
+    grid-area: c;
+    background: url(images/c.jpg) center;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+section#d {
+    grid-area: d;
+    background: url(images/d.jpg) center;
+    background-size: cover;
+}
+
+section#e {
+    grid-area: e;
+    background: url(images/e.jpg) center;
+    background-size: cover;
+}
+
+section#f {
+    grid-area: f;
+    background: url(images/f.jpg) center;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+section#g {
+    grid-area: g;
+    background: url(images/g.webp) center ;
+    background-size: cover;
+}
+
+section#h {
+    grid-area: h;
+    background: url(images/h.jpg) center;
+    background-size: cover;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
+section#q {
+    grid-area: q;
+    
+}

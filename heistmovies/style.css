@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+     "heat heat suspects suspects"
+     "inside rififi rififi bankjob";
+     height: 100vh;
+}
+
+section {
+    background-color: blue;
+    margin: 2px;
+    padding: 10px;
+
+}
+
+#heat {
+    grid-area: heat;
+    background-size: cover;
+    background-image: url(images/heat.jpg);
+    color: white;
+    
+}
+
+#suspects {
+    grid-area: suspects;
+    background-size: cover;
+    background-image: url(images/usualsuspects.jpg);
+    color: white;
+}
+
+#inside {
+    grid-area: inside;
+    background-size: cover;
+    background-image: url(images/insideman.jpg);
+    color: white;
+}
+
+#rififi {
+    grid-area: rififi;
+    background-size: cover;
+    background-image: url(images/rififi.jpg);
+    color: white;
+}
+
+#bankjob {
+    grid-area: bankjob;
+    background-size: cover;
+    background-image: url(images/bankjob.jpg);
+    color: white;
+}

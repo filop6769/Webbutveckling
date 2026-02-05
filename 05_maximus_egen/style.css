@@ -1,0 +1,124 @@
+
+@charset "UTF-8";
+
+body {
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px
+}
+
+h1 {
+    color: #557687;
+    font-weight: bold;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 10px, 0, 0, 0;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    background: #444;
+}
+
+nav a:hover {
+    background-color: #557687;
+}
+
+main {
+    display: flex;
+}
+
+article {
+    flex: 2;
+    background-color: #EEE;
+}
+
+article, aside {
+    padding: 10px;
+}
+
+P.ninja {
+    font-size: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+article span {
+    border: 1px solid #557687;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+aside {
+    flex: 1.25;
+}
+
+footer {
+    background-color: #555;
+    display: flex;
+    margin: 2px;
+}
+
+section {
+    flex: 1;
+    padding: 14px;
+}
+
+section p {
+    color: white;
+    margin-top: 0;
+}
+
+aside div {
+    background-size: cover;
+    padding: 80px 10px 10px 10px;
+}
+
+h4 {
+    color: #557687;
+    margin-bottom: 0px;
+}
+
+.newyork {
+    background: url('images/newyork.jpg');
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.chokladboll {
+    background: url('images/chokladboll.jpg');
+    background-size: cover;
+}
+
+div section {
+    background: rgba(0,0,0,.3);
+    padding: 8px;
+    color: white;
+}
+
+h5 {
+    margin: 0;
+}
+
+div section p {
+    margin: 0;
+}
+
+.chumchum {
+    background-image: url('images/chumchum.jpg');
+}

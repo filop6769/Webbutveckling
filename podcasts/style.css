@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    
+
+}
+
+aside {
+    flex: 1;
+    gap: 20px;
+}
+
+main {
+    flex: 2;
+}
+
+
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-areas:
+    "imgmoon imgvitruvian txtvitruvian"
+    "imgmoon imgnapoleon txtnapoleon"
+    "txtmoon imgpyramids txtpyramids"
+    "txtmoon imgali txtali"
+    ;
+    gap: 20px;
+    grid-auto-rows: min-content;
+    
+}
+
+#imgmoon {
+    grid-area: imgmoon;
+    background: url(images/moonlanding.webp)center;
+    background-size: cover;
+    
+}
+
+#txtmoon {
+    grid-area: txtmoon;
+}
+
+#imgnapoleon {
+    grid-area: imgnapoleon;
+    background: url(images/napoleon.webp)center;
+    background-size: cover;
+    
+}
+
+#txtnapoleon {
+    grid-area: txtnapoleon;
+}
+
+#imgpyramids {
+    grid-area: imgpyramids;
+    background: url(images/pyramids.webp)center;
+    background-size: cover;
+}
+
+#txtpyramids {
+    grid-area: txtpyramids;
+}
+
+#imgali {
+    grid-area: imgali;
+    background: url(images/ali.webp)center;
+    background-size: cover;
+}
+
+#txtali {
+    grid-area: txtali;
+}
+
+#imgvitruvian {
+    grid-area: imgvitruvian;
+    background: url(images/vitruvian_man_da_vinci.webp)center;
+    background-size: cover;
+
+}
+
+#txtvitruvian {
+    grid-area: txtvitruvian;
+}
+
+
+

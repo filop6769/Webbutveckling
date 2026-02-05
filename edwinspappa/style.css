@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    width: 100px;
+    height: 20px;
+}
+

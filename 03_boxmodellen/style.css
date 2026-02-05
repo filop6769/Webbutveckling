@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: url('images/scoops.jpg');
+    padding: 100px;
+    background-size: cover;
+}
+
+nav {
+    background: pink;
+
+}
+
+nav a {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: pink;
+    color:white;
+    
+}
+
+nav a:hover {
+    background-color: white;
+    color: pink;
+    
+}
+
+main {
+    padding-left: 10px;
+}
+
+h1 {
+    font: 30px verdana;
+    font-weight: bold;
+    color: pink;
+}
+
+p {
+    font-family:'Times New Roman', Times, serif;
+}
+
+#icecream {
+    width: 100%;
+}

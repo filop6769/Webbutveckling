@@ -1,0 +1,83 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b c"
+    "d . e"
+    "f g h"
+    "i q q"
+    "j q q"
+    ;
+
+
+    height: 100vh;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+section#a{
+    grid-area: a;
+    background: url(images/a.jpg);
+    background-size: cover;
+    
+}
+
+section#b {
+    grid-area: b;
+    background: url(images/b.webp);
+    background-size: cover;
+}
+
+section#c {
+    grid-area: c;
+    background: url(images/c.jpg);
+    background-size: cover;
+}
+
+section#d {
+    grid-area: d;
+    background: url(images/d.jpg);
+    background-size: cover;
+}
+
+section#e {
+    grid-area: e;
+    background: url(images/e.jpg);
+    background-size: cover;
+}
+
+section#f {
+    grid-area: f;
+    background: url(images/f.jpg);
+    background-size: cover;
+}
+
+section#g {
+    grid-area: g;
+    background: url(images/g.webp);
+    background-size: cover;
+}
+
+section#h {
+    grid-area: h;
+    background: url(images/h.jpg);
+    background-size: cover;
+}
+
+section#i {
+    grid-area: i;
+    background: url(images/i.jpg);
+    background-size: cover;
+}
+
+section#j {
+    grid-area: j;
+    background: url(images/j.jpg);
+    background-size: cover;
+}
+
+section#q {
+    grid-area: q;
+    
+}

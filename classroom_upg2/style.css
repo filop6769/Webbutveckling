@@ -1,0 +1,26 @@
+article {
+    display: flex;
+    gap: 10px;
+}
+
+article section {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

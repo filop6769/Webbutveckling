@@ -1,0 +1,34 @@
+h2 {
+    color: white;
+    font-size: 40px;
+}
+
+body {
+    background-color: grey;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+article {
+    display: flex;
+    border-bottom: 2px dotted black;
+}
+
+#one {
+    flex: 1;
+    border: 3px solid blue;
+}
+
+#two {
+    flex: 1;
+    border: 3px solid red;
+}
+
+#three {
+    flex: 2;
+    border: solid black;
+}
+
+

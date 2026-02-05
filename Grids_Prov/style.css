@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    background: url(images/Wynton-Marsalis.jpg) center;
+    background-size: cover;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . a . ."
+    ". q q b ."
+    "c . . . ."
+    ". d . e ."
+    "f . g . .";
+    row-gap: 25px;
+    column-gap: 30px;
+}
+
+section {
+    background:#D4759F;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    
+    
+}
+
+section#a {
+    grid-area: a;
+}
+
+section#b {
+    grid-area: b;
+}
+
+section#c {
+    grid-area: c;
+}
+
+section#d {
+    grid-area: d;
+}
+
+section#e {
+    grid-area: e;
+}
+
+section#f {
+    grid-area: f;
+}
+
+section#g {
+    grid-area: g;
+}
+
+#q {
+    grid-area: q;
+
+}
