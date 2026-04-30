@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameflip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">Game<span class="title">Flip</span></div>
+
+    <div class="nav-links">
+        <a href="#">Store</a>
+        <a href="#">Library</a>
+        <a href="#">Deals</a>
+        <a href="#">Support</a>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search games..." autocomplete="off" onkeyup="showSuggestions(); searchGames();">
+        <div id="suggestions" class="suggestions"></div>
+    </div>
+</div>
+
+
+
+<!-- Ny Expansion -->
+
+<div class="diablobg">
+
+    <img class="diablo-image" src="images/diabloiv-banner.jpg" alt="Diablo IV: Lord of Hatred">
+
+    <div class="diablo-content">
+        <span class="badgediablo">NEW</span>
+        <h2>Diablo IV: Lord of Hatred</h2>
+        <p>New Expansion Avaialble Now!</p>
+        <h3>$39.99 USD</h3>
+
+        <button class="trailer-btn" onclick="openTrailer('Gpaz0etTqJw')">▶ Play Trailer</button>
+        <button onclick="alert('Added to cart!')">🛒 Buy Now</button>
+    </div>
+    
+
+</div>
+
+
+
+
+<div class="categories">
+    <button onclick="filtergames('all')">ALL</button>
+    <button onclick="filtergames('xbox')">Xbox</button>
+    <button onclick="filtergames('ps5')">PS</button>
+    <button onclick="filtergames('pc')">PC</button>
+</div>
+
+
+
+<div class="games">
+
+    <div class="game xbox" onclick="opengame(0, this)">
+        <span class="badge">-20%</span>
+        <img src="/images/halo3.jpg">
+        <div class="game-info">
+            <h3>Halo 3</h3>
+            <p>Rating:⭐ 4.5</p>
+            <p class="price">
+                <span class="old-price">$59.99 USD</span>
+                <span class="new-price">$47.99 USD</span>
+            </p>
+
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i varukorg!')">
+                🛒 Add to cart
+            </button>
+        </div>
+    </div>
+
+
+    <div class="game xbox" onclick="location.href='details.html?id=1'">
+    <img src="/images/forza3.jpg">
+        <div class="game-info">
+            <h3>Forza Horizon 3</h3>
+            <p>Rating:⭐ 4.8</p>
+            <p>Price:$59.99 USD</p>
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i varukorg!')">🛒 Add to cart</button>
+        </div>
+    </div>
+
+
+    <div class="game xbox" onclick="opengame(2, this)">
+        <img src="/images/doom.jpg">
+        <div class="game-info">
+            <h3>Doom Eternal</h3>
+            <p>Rating:⭐ 5</p>
+            <p>Price:$59.99 USD</p>
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i varukorg!')">🛒 Add to cart</button>
+        </div>
+    </div>
+
+
+    <div class="game ps5" onclick="opengame(3, this)">
+        <img src="/images/spiderman2.jpg">
+        <div class="game-info">
+            <h3>Spider-Man 2</h3>
+            <p>Rating:⭐ 4.5</p>
+            <p>Price:$69.99 USD</p>
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i korg!')">🛒 Add to cart</button>
+        </div>
+    </div>
+
+
+    <div class="game ps5" onclick="opengame(4, this)">
+        <img src="/images/godofwar.jpg">
+        <div class="game-info">
+            <h3>God of War Ragnarök</h3>
+            <p>Rating:⭐ 5</p>
+            <p>Price:$59.99 USD</p>
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i korg!')">🛒 Add to cart</button>
+        </div>
+    </div>
+
+
+    <div class="game ps5" onclick="opengame(5, this)">
+        <img src="/images/granturismo.jpg">
+        <div class="game-info">
+            <h3>Gran Turismo 7</h3>
+            <p>Rating:⭐ 5</p>
+            <p>Price:$45 USD</p>
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i korg!')">🛒 Add to cart</button>
+        </div>
+    </div>
+
+
+    <div class="game pc" onclick="opengame(6, this)">
+        <span class="badge">-50%</span>
+        <img src="/images/minecraft.jpg">
+        <div class="game-info">
+            <h3>Minecraft</h3>
+            <p>Rating:⭐ 4.4</p>
+            <p class="price">
+    <span class="old-price">$59.99</span>
+    <span class="new-price">$26.99</span>
+</p>
+
+
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i korg!')">🛒 Add to cart</button>
+        </div>
+    </div>
+
+    <div class="game pc" onclick="opengame(7, this)">
+        <img src="/images/diabloiv.jpg">
+        <div class="game-info">
+            <h3>DIABLO IV</h3>
+            <p>Rating:⭐ 4.2</p>
+            <p>Price:$49.99 USD</p>
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i korg!')">🛒 Add to cart</button>
+        </div>
+    </div>
+
+    <div class="game pc" onclick="opengame(8, this)">
+        <img src="/images/escapefromtarkov.jpg">
+        <div class="game-info">
+            <h3>Escape from Tarkov</h3>
+            <p>Rating:⭐ 3.8</p>
+            <p>Price:$50 USD</p>
+            <button class="cart-btn" onclick="event.stopPropagation();alert('Lagt i korg!')">🛒 Add to cart</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">X</span>
+        <h2 id="title"></h2>
+        <p id="creator"></p>
+        <p id="year"></p>
+        <p id="description"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<div id="trailer-popup" class="trailer-popup">
+    <div class="trailer-content">
+        <span class="close" onclick="closeTrailer()">X</span>
+
+        <iframe 
+            id="trailer-video"
+            width="800"
+            height="450"
+            src="https://www.youtube.com/embed/Gpaz0etTqJw"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>© 2026 GameFlip</p>
+    <p>Contact: support@gameflip.com</p>
+    <p>Follow us: 🎮 Instagram | 🐦 Twitter | 📘 Facebook</p>
+</footer>
+
+</body>
+
+
+
+</html>

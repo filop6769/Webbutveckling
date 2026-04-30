@@ -1,0 +1,419 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+.categories {
+    margin: 30px;
+}
+
+.categories button {
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 420px;
+    position: relative;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.game img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #1c1c1c;
+}
+
+.game:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(45deg, red, orange);
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.badgediablo {
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(45deg, red, orange);
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+
+/* CART BUTTON */
+
+.cart-btn {
+    padding: 8px 12px;
+    border: none;
+    background: #2ecc71;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+    align-self: flex-start;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.cart-btn:hover {
+    background: #27ae60;
+}
+
+/* POPUP */
+
+.popup {
+    display: none;
+    position: absolute; 
+    background: white;
+    color: black;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: left;
+}
+
+/* close button */
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+/* Diablo expansion SECTION */
+.diablobg {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+.diablo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: black;
+    filter: brightness(1.5);
+}
+
+.diablo-content {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.diablobg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* TRAILER POPUP */
+.trailer-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.trailer-content {
+    position: relative;
+}
+
+.trailer-content .close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Navigation bar */
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #0a0a0a;
+    
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    color: red;
+}
+
+/* sökruta */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: white;
+    width: 180px;
+}
+
+
+.search-box input:focus {
+    background: #222;
+    color: white;
+    outline: none;
+}
+
+/* förslag i sökrutan */
+
+.suggestions {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.suggestion-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.suggestion-item img {
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.suggestion-item span {
+    color: white;
+    font-size: 14px;
+}
+
+/* rea på minecraft */
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.old-price {
+    text-decoration: line-through; 
+    color: #888;
+    font-size: 14px;
+}
+
+.new-price {
+    color: #2ecc71;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* footer */
+
+.footer {
+    background: #0a0a0a;
+    color: #aaa;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* game-info */
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;   
+    padding-bottom: 15px;  
+    justify-content: space-between;
+}
+
+.cart-btn {
+    padding: 10px 20px; 
+    border: none;
+    background: #2ecc71;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 6px;
+    width: auto;           
+    align-self: center;    
+    margin: 10px auto;     
+    margin-top: auto;
+}
+
+/* Details för Forza 3 */
+
+.details-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px;
+    padding: 20px;
+    text-align: left;
+}
+.details-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.details-info h1 { 
+    font-size: 48px; 
+    margin-top: 0; 
+}
+
+.price-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    
+    
+    .navbar {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .nav-links {
+        display: none; 
+    }
+
+    .search-box input {
+        width: 100%; 
+    }
+
+    
+    .games {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        padding: 15px;
+        gap: 15px;
+    }
+
+    
+    .details-container {
+        grid-template-columns: 1fr; 
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    
+    #trailer-video {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9; 
+    }
+
+    
+    .diablo-content {
+        left: 20px;
+        top: 60%;
+    }
+    
+    .diablo-content h2 {
+        font-size: 24px;
+    }
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+}

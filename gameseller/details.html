@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details - GameFlip</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+        
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo" onclick="location.href='index.html'">Game<span class="title">Flip</span></div>
+</div>
+
+<div class="details-container">
+    <div class="details-left">
+        <a href="index.html" class="back-button">← Back to Store</a>
+        <div class="details-image">
+            <img id="game-img" src="" alt="">
+        </div>
+    </div>
+
+    <div class="details-right">
+        <h1 id="game-title">Loading...</h1>
+        <p id="game-meta" style="color: #888;"></p>
+        <hr style="border: 0.5px solid #333;">
+        <h3>About this game</h3>
+        <p id="game-desc" style="line-height: 1.6; font-size: 18px;"></p>
+        
+        <div class="price-box">
+            <h2 id="game-price" style="color: #2ecc71; margin: 0;"></h2>
+            <button class="cart-btn" style="width: 100%; margin-top: 15px; padding: 15px;">🛒 Add to Cart</button>
+            <button id="open-trailer-btn" class="cart-btn" style="background:#333; margin-top:10px;">▶ Watch Trailer</button>
+        </div>
+        <div class="system-requirements" style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
+            <h4>Minimum System Requirements:</h4>
+            <ul id="game-specs" style="color: #888; font-size: 14px; list-style: none; padding: 0;"></ul>
+        </div>
+    </div>
+    
+
+    
+</div>
+<div id="trailer-popup" class="trailer-popup" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 2000;">
+    <div class="trailer-content" style="position: relative;">
+        <span class="close" onclick="closeTrailer()" style="position: absolute; top: -30px; right: 0; color: white; font-size: 20px; cursor: pointer;">X</span>
+        
+        <iframe 
+            id="trailer-video"
+            width="800"
+            height="450"
+            src="" 
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
